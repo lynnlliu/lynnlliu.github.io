@@ -14,6 +14,10 @@
 	  font-family: 'Roboto';
 	  font-weight: 100;
 	}
+	
+	a:hover {
+	color: black;
+	}
 
 	.container {
 	  margin: 0 auto;
@@ -92,7 +96,8 @@
 	}
 
 	.btn:hover, .nav ul li:hover a:hover{
-	  background: #635C52;
+	  background: #b6c1c6;
+	  color:black;
 	  cursor: pointer; 
 	  transition: background .5s;  
 	}
@@ -171,29 +176,61 @@
 
 	  .main img {
 		width: 100%;
+		height: 100%;
 	  }
 	}
 	
 	.gallery {
-	  display: flex;
-	  flex-wrap: wrap;
-	  justify-content: center;
-	  margin-bottom: 80px;
-	}
-	.gallery-item {
-	  margin: 20px;
-	  border: 5px solid #FFF;
-	}
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 80px;
+        
+        }
 	
-	.gallery a:hover {
-		opacity: .5; 
-		transition: .5s;}
+	.gallery-container {
+        position: relative; 
+        /*width: 330px;
+        height: auto;*/
+        margin: 20px;
+        }
 
-	.gallery-item .thumbnail {
-		border: 5px solid #FFF;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		width: 330px;
-	}
+        .image {
+        display: block;
+        width: 330px;
+        height: auto;
+        border: 5px solid white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+        }
+
+        .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: white;
+        }
+        
+
+        .gallery a:hover .overlay{
+        transition: .5s ease;
+        opacity: .9;
+        }
+
+        .text {
+        color: black;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        }
 
 	</style>
   </head>
@@ -238,22 +275,58 @@
 	
 	
 	<h2 align="center" id="gallery-section">Highlights</h2>
-	<p align="center" id="gallery-section">Click on image to view in new tab</p>
-	<div class="gallery">
-      <figure class="gallery-item">
-        <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w400-577781vEqdPTXD.jpg" target="_blank"><img class="thumbnail" src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w400-577781vEqdPTXD.jpg"></a>
-      </figure>
-      <figure class="gallery-item">
-        <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w400-577781xcHoc8oB.png" target="_blank"><img class="thumbnail" src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w400-577781xcHoc8oB.png"></a>
-      </figure>
-      <figure class="gallery-item">
-        <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w400-5777816oq3Nu2l.png" target="_blank"><img class="thumbnail" src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w400-5777816oq3Nu2l.png"></a>
-      </figure>
-      <figure class="gallery-item">
-        <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w400-5777810tcBydY9.png" target="_blank"><img class="thumbnail" src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w400-5777810tcBydY9.png"></a>
-      </figure>
-    </div>
+	<p align="center" id="gallery-section">Click on image to view in new tab. <br/><a href="http://lynnliu.portfoliobox.net/">Click here to view my full Art/Design Portfolio!</a></p>
 	
+	<div class="gallery">
+	
+	<div class="gallery-container">
+            <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w400-577781vEqdPTXD.jpg" target="_blank">
+            <img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w400-577781vEqdPTXD.jpg" alt="Image1" class="image">
+            <div class="overlay">
+                <div class="text"><b>Illustration |</b> Lana Del Rey</div>
+            </div>
+            </a>
+            
+        </div>
+        
+      
+        <div class="gallery-container">
+            <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w400-577781xcHoc8oB.png" target="_blank">
+            <img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w400-577781xcHoc8oB.png" alt="Image2" class="image">
+            <div class="overlay">
+                <div class="text"><b>Layout |</b> Table of Contents</div>
+            </div>
+            </a>
+            
+        </div>
+        
+        
+        <div class="gallery-container">
+            <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w400-5777816oq3Nu2l.png" target="_blank">
+            <img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w400-5777816oq3Nu2l.png" alt="Image2" class="image">
+            <div class="overlay">
+                <div class="text"><b>Layout |</b> Table of Contents</div>
+            </div>
+            </a>
+            
+        </div>
+        
+        
+        <div class="gallery-container">
+            <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w400-5777810tcBydY9.png" target="_blank">
+            <img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w400-5777810tcBydY9.png" alt="Image2" class="image">
+            <div class="overlay">
+                <div class="text"><b>Design |</b> Skinning a Wireframe</div>
+            </div>
+            </a>
+            
+        </div>
+        
+        
+        
+        </div>
+
+	</div>
 	
 	
 	
