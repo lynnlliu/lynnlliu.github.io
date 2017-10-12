@@ -185,58 +185,126 @@
 	  }
 	}
 	
-	.gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-bottom: 80px;
-        
-        }
-	
-	.gallery-container {
-        position: relative; 
-        /*width: 330px;
-        height: auto;*/
-        margin: 20px;
+	/*start of masonry css*/
+	.masonry img {
+        max-width: 100%;
+        vertical-align: bottom;
         }
 
-        .image {
-        display: block;
-        width: 330px;
-        height: auto;
+        .wrapper {
+        width: 92.5%;
+        padding: 1em;
+        }
+
+        /*a {
+        color: #5b7083;
+        -moz-transition: all .25s ease-in-out;
+        -webkit-transition: all .25s ease-in-out;
+        transition: all .25s ease-in-out;
+        }*/
+
+        .masonry {
+        -moz-transition: all .5s ease-in-out;
+        -webkit-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        -moz-column-gap: 30px;
+        -webkit-column-gap: 30px;
+        column-gap: 30px;
+        -moz-column-fill: initial;
+        -webkit-column-fill: initial;
+        column-fill: initial;
+        }
+        .masonry .brick {
+        margin-bottom: 30px;
+        position: relative;
         border: 5px solid white;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+        }
+        .masonry .brick img {
+        -moz-transition: all .5s ease-in-out;
+        -webkit-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        }
+        .masonry .brick:hover img {
+        opacity: .75;
         }
 
+        /*overlay stuff*/
         .overlay {
-            position: absolute;
-            bottom: 100%;
-            left: 0;
-            right: 0;
-            background-color: white;
-            overflow: hidden;
-            width: 100%;
-            height:0;
-            transition: .5s ease;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        /*background-color: #b6c1c6; */
+        background-color: rgba(255, 255, 255, 0.9)
         }
-        
 
-        .gallery a:hover .overlay{
-            bottom: 89%;
-            height: 50px;
+        .masonry .brick:hover .overlay {
+        opacity: 1;
         }
+                
 
         .text {
-            white-space: nowrap; 
-            color: black;
-            font-size: 20px;
-            position: absolute;
-            overflow: hidden;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
+        color: black;
+        white-space: normal;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         }
+
+        /*end of overlay stuff*/
+
+        .span {
+        -moz-column-span: all;
+        -webkit-column-span: all;
+        column-span: all;
+        *margin: 30px 0;
+        }
+
+        @media only screen and (min-width: 1024px) {
+        /*.desc {
+            font-size: 1.25em;
+        }
+
+        .intro {
+            letter-spacing: 1px;
+        }*/
+
+        .wrapper {
+            width: 80%;
+            padding: 2em;
+        }
+
+        .masonry {
+            -moz-column-count: 3;
+            -webkit-column-count: 3;
+            column-count: 3;
+        }
+        }
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        .wrapper {
+            width: 85%;
+            padding: 1.5em;
+        }
+
+        .masonry {
+            -moz-column-count: 2;
+            -webkit-column-count: 2;
+            column-count: 2;
+        }
+        }
+	
+	
+	
+	/*end of masonry css*/
 
 	</style>
   </head>
@@ -288,56 +356,85 @@
 	<h2 align="center" id="gallery-section">Highlights</h2>
 	<p align="center" id="gallery-section">Click on image to view in new tab. <br/><a href="http://lynnliu.portfoliobox.net/">Click here to view my full Art/Design Portfolio!</a></p>
 	
-	<div class="gallery">
-	
-	<div class="gallery-container">
-            <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w400-577781vEqdPTXD.jpg" target="_blank">
-            <img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w400-577781vEqdPTXD.jpg" alt="Image1" class="image">
-            <div class="overlay">
-                <div class="text"><b>Illustration |</b> Lana Del Rey</div>
-            </div>
-            </a>
-            
-        </div>
-        
-      
-        <div class="gallery-container">
-            <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w400-577781xcHoc8oB.png" target="_blank">
-            <img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w400-577781xcHoc8oB.png" alt="Image2" class="image">
-            <div class="overlay">
-                <div class="text"><b>Layout |</b> Table of Contents</div>
-            </div>
-            </a>
-            
-        </div>
-        
-        
-        <div class="gallery-container">
-            <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w400-5777816oq3Nu2l.png" target="_blank">
-            <img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w400-5777816oq3Nu2l.png" alt="Image2" class="image">
-            <div class="overlay">
-                <div class="text"><b>Layout |</b> Table of Contents</div>
-            </div>
-            </a>
-            
-        </div>
-        
-        
-        <div class="gallery-container">
-            <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w400-5777810tcBydY9.png" target="_blank">
-            <img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w400-5777810tcBydY9.png" alt="Image2" class="image">
-            <div class="overlay">
-                <div class="text"><b>Design |</b> Skinning a Wireframe</div>
-            </div>
-            </a>
-            
-        </div>
-        
-        
-        
-        </div>
+	<!--start of masonry gallery-->
+	<div align="center">
+	<div class="wrapper">
 
-	</div>
+		<div class="masonry">
+		
+			<div class="brick"> <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/h800-577781vEqdPTXD.jpg" target="_blank">
+				<img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/h800-577781vEqdPTXD.jpg">
+				<div class="overlay">
+                                    <div class="text"><b>Illustration |</b> Lana Del Rey</div>
+                                </div>
+                        </a>
+			</div>
+			
+			<div class="brick"> <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/h800-577781xcHoc8oB.png" target="_blank">
+				<img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/h800-577781xcHoc8oB.png">
+				<div class="overlay">
+                                    <div class="text"><b>Layout |</b> Table of Contents</div>
+                                </div>
+			</a>
+			</div>
+			
+			<div class="brick"> <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/h800-5777816oq3Nu2l.png" target="_blank">
+				<img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/h800-5777816oq3Nu2l.png">
+				<div class="overlay">
+                                    <div class="text"><b>Layout |</b> Table of Contents (Food Themed)</div>
+                                </div>
+			</a>
+			</div>
+			
+			<div class="brick"> <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w1000-5777810tcBydY9.png" target="_blank">
+				<img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w1000-5777810tcBydY9.png">
+				<div class="overlay">
+                                    <div class="text"><b>Design |</b> "Skinning a Wireframe" (Assignment)</div>
+                                </div>
+			</a>
+			</div>
+			
+			<div class="brick"> <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/h800-577781kVxS2qCf.png" target="_blank">
+				<img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/h800-577781kVxS2qCf.png">
+				<div class="overlay">
+                                    <div class="text"><b>Poster |</b> RUCS Advertisement</div>
+                                </div>
+			</a>
+			</div>
+			
+			<div class="brick"> <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w1000-577781kgoYe4y7.png" target="_blank">
+				<img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w1000-577781kgoYe4y7.png">
+				<div class="overlay">
+                                    <div class="text"><b>Logo |</b> RUCS</div>
+                                </div>
+			</a>
+			</div>
+			
+                        <div class="brick"> <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/h800-577781ph4i8Qg7.png" target="_blank">
+				<img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/h800-577781ph4i8Qg7.png">
+				<div class="overlay">
+                                    <div class="text"><b>Digital Illustration |</b> Kingsman</div>
+                                </div>
+			</a>
+			</div>
+			
+			<div class="brick"> <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/h800-577781UEJuN5kz.png" target="_blank">
+				<img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/h800-577781UEJuN5kz.png">
+				<div class="overlay">
+                                    <div class="text"><b>Game Interface |</b> Trilobites!</div>
+                                </div>
+			</a>
+			</div>
+			
+		</div>
+		</div>
+		</div>
+	
+	
+	
+	
+	
+	<!--end of masonry gallery-->
 	
 	
 	
