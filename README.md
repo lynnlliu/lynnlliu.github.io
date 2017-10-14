@@ -1,2 +1,2 @@
 # lynnlliu.github.io
-lynnlliu.github.io
+http://lynnlliu.github.io
