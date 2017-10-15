@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -299,6 +300,31 @@
 	
 	/*end of masonry css*/
 	
+	/*skills gallery*/
+	/*code from
+	https://www.w3schools.com/howto/howto_css_equal_height.asp
+	*/
+	
+	.col-container {
+		display: table; /* Make the container element behave like a table */
+		width: 100%; /* Set full-width to expand the whole page */
+	}
+
+	.col {
+		display: table-cell; /* Make elements inside the container behave like table cells */
+		width: 33.33333%;
+		padding: 0 8px; /*NEED TO FIGURE OUT PADDING AND MARGIN*/
+		margin: 1.5em 0;
+	}
+	
+	@media only screen and (max-width: 700px) {
+		.col { 
+			display: block;
+			width: 100%;
+		}
+	}
+	
+	/*end of skills gallery*/
 	/*language bar css*/
 	
 	.bar1, .bar2, .bar3 {
@@ -391,25 +417,60 @@
         </div>
         <div class="main">
         <div class="container">
-		<h3>Competencies:</h3>
+		<!--<h3>Competencies:</h3>
 		<p>Programming languages: Python, Java, C, HTML, CSS</p>
 		<p>Software: Adobe Illustrator, Adobe InDesign, Photoshop, GIMP, Paint Tool SAI</p> 
 		
 		Human languages:</br>
 		
-		<!--language chart-->
+		--language chart--
 		
 		english <div class="bar1" aria-roledescription="bar chart"></div>
                 french <div class="bar2" aria-roledescription="bar chart"></div>
                 russian <div class="bar3" aria-roledescription="bar chart"></div>
 		
 		
-		<!--end of language chart-->
+		--end of language chart--
+		-->
 		
 		<div align = "center" style="margin-top: 40px"><a class="btn" onclick="notAvailable()">See Design Resume</a> <a class="btn" onclick="notAvailable()">See Coding Resume</a></div>
       </div>
     </div>
 	
+	<!---skills gallery --->
+	
+	<div class="wrapper">
+	<div class="wrapper">
+	<div class="col-container">
+	  <div class="col" style="background-color: #c9c9c9">
+		<h2>Programming Languages</h2>
+		<p>Python</p>
+		<p>Java</p>
+		<p>C</p>
+		<p>HTML</p>
+		<p>CSS</p>
+	  </div>
+
+	  <div class="col" style="background-color: pink">
+		<h2>Software</h2>
+		<p>Adobe Illustrator</p>
+		<p>Adobe InDesign</p>
+		<p>Photoshop</p>
+		<p>GIMP</p>
+		<p>Paint Tool SAI</p>
+	  </div>
+
+	  <div class="col"style="background-color: #EAF3F7">
+		<h2>World Languages</h2>
+		<p>English</p>
+		<p>French</p>
+		<p>Russian</p>
+	  </div>
+	</div>
+	
+	</div></div>
+	
+	<!--end of skills gallery--->
 	
 	<!--<div style="background: #EAF3F7; padding-top:1px"> -->
 	<!--<h2 align="center" id="gallery-section">Highlights</h2>
