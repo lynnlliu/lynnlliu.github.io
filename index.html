@@ -308,13 +308,14 @@
 	.col-container {
 		display: table; /* Make the container element behave like a table */
 		width: 100%; /* Set full-width to expand the whole page */
+		border-spacing: 10px;
 	}
 
 	.col {
 		display: table-cell; /* Make elements inside the container behave like table cells */
 		width: 33.33333%;
-		padding: 0 8px; /*NEED TO FIGURE OUT PADDING AND MARGIN*/
-		margin: 1.5em 0;
+		padding: 8px 8px; /*NEED TO FIGURE OUT MARGIN*/
+		margin-bottom: 10px ;
 	}
 	
 	@media only screen and (max-width: 700px) {
@@ -331,7 +332,8 @@
         position: relative;
         background: #c9c9c9;
         height: 1rem;
-        width: 20rem;
+        /*width: 20rem;*/
+        width: 100%;
         text-align: right;
         color: #414141;
         }
@@ -340,7 +342,7 @@
         position: absolute;
         left: 0;
         height: 100%;
-        background: #EAF3F7;
+        background: pink;
         
         }
 
@@ -462,9 +464,17 @@
 
 	  <div class="col"style="background-color: #EAF3F7">
 		<h2>World Languages</h2>
-		<p>English</p>
+		<!--<p>English</p>
 		<p>French</p>
-		<p>Russian</p>
+		<p>Russian</p>-->
+		<!----language chart-->
+		
+		english <div class="bar1" aria-roledescription="bar chart"></div>
+                french <div class="bar2" aria-roledescription="bar chart"></div>
+                russian <div class="bar3" aria-roledescription="bar chart"></div>
+		
+		
+		<!--end of language chart-->
 	  </div>
 	</div>
 	
