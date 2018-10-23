@@ -1,0 +1,568 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>---Lynn Liu---</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Permanent+Marker:400,300,500,100' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+	html, body {
+	  margin: 0;
+	  padding: 0;
+	}
+
+	body {
+	  font-family: 'Roboto';
+	  font-weight: 100;
+	}
+	
+	a:hover {
+	color: black;
+	}
+
+	.container {
+	  margin: 0 auto;
+	  max-width: 940px; 
+	  padding: 0 10px;
+	}
+
+	.header {
+	  background: url(https://snappygoat.com/o/00a801040612f6041fff9403d9171a7a5cb51689/dried-flowers-faded-pink-withered-1149191.jpg) no-repeat center center; 
+	  background-size: cover;
+	  height: 950px;
+	  text-align: center; 
+	}
+
+	.header .container {
+	  position: relative;
+	  top: 170px;
+	}
+
+	.header h1 {
+            font-family: 'Permanent Marker';
+	  color: #fff;
+	  line-height: 100px; 
+	  font-size: 80px;
+	  margin-top: 0;
+	  margin-bottom: 80px;
+	  text-transform: uppercase; 
+	}
+
+	@media (min-width:850px) {
+	  .header h1 {
+		font-size: 120px;
+	  }
+	}
+
+	.header p {
+	  color: #fff;
+	  font-weight: 500;
+	  letter-spacing: 8px;
+	  margin-bottom: 40px;
+	  margin-top: 0;
+	  text-transform: uppercase; 
+	}
+
+	.btn {
+	  color: #fff;
+	  background: #000;
+	  padding: 10px 40px;
+	  text-decoration: none; 
+	  transition: background .5s; 
+	}
+
+	.nav { 
+	  background: #000;
+	  height: 80px; 
+	  width: 100%;
+	  color: white;
+	  border-radius: 0px 0px 15px 15px;
+	  position: fixed; /*if you want to un-fix it just make it 'absolute' and change position of nav code in html section*/
+	  top: 0;
+	}
+
+	.nav ul {
+	  height: 80px;
+	  list-style: none;
+	  margin: 0 auto; 
+	  padding: 0;
+	}
+
+	.nav ul li a {
+	  color: #fff;
+	  display: inline-block; 
+	  height: 80px;
+	  line-height: 80px; 
+	  list-style: none;
+	  padding: 0 10px;
+	  transition: background .5s; 
+	  text-decoration: none;
+	}
+
+	.btn:hover, .nav ul li:hover a:hover{
+	  background: pink;
+	  color:black;
+	  cursor: pointer; 
+	  transition: background .5s;  
+	}
+
+	.main .container {
+	  margin: 80px auto;
+	}
+
+	.main img {
+	  float: left;
+	  margin: 50px 80px 50px 0px;
+	  border-radius: 50%;
+	  
+	}
+
+	.jumbotron {
+	  background: url(https://images.unsplash.com/photo-1462597656933-2346cbb5ea88?dpr=1&auto=compress,format&fit=crop&w=1950&h=&q=80&cs=tinysrgb&crop=) center center; 
+	  background-size: cover;
+	  height: 600px; 
+	  -webkit-filter: sepia(10%); /* Safari */
+	  filter: sepia(10%)
+	}
+
+	.jumbotron .container {
+	  position: relative;
+	  top: 220px;
+	}
+
+	.jumbotron h2 {
+	  color: #fff;
+	  text-align: right; 
+	}
+
+	.jumbotron p {
+	  color: #fff; 
+	  text-align: right; 
+	}
+	
+	.jumbotron a {
+	text-decoration:none;
+	color: white;
+	}
+	
+	.jumbotron a:hover {
+	color: black;
+	}
+
+	.jumbotron .btn {
+	  margin: 10px 0 0;
+	  float: right; 
+	}
+
+	.footer { 
+	  background: #000;
+	  height: 80px; 
+	  padding-bottom: 50px;
+	}
+
+	.footer p { 
+	  color: #fff;
+	  font-size: 14px;  
+	  height: 80px; 
+	  line-height: 80px;
+	  margin: 0;  
+	}
+
+	@media (max-width: 500px) {
+	  .header h1 {
+		font-size: 50px;
+		line-height: 64px;
+	  }
+
+	  .main, .jumbotron {
+		padding: 0 30px;
+	  }
+
+	  .main img {
+		width: 100%;
+		height: 100%;
+	  }
+	
+	  .btn{
+		display: inline-block;
+		margin-bottom: 10px;
+	  }
+	}
+	
+	/*start of masonry css*/
+
+        .gallery-body {
+            background: #EAF3F7;
+            padding-top: 1px;
+        }
+
+        .masonry img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        }
+
+        .wrapper, .wrapper2 {
+            width: 95%;
+            
+        }
+		
+		.wrapper{
+		margin: 80px auto;}
+		
+		.wrapper2{margin: 1.5em auto;}
+
+        .masonry {
+            margin: 1.5em 0;
+            padding: 0;
+            -moz-column-gap: 1.5em;
+            -webkit-column-gap: 1.5em;
+            column-gap: 1.5em;
+            font-size: .85em;
+        }
+
+        .item {
+            display: inline-block;
+            background: #fff;
+            padding: 1.5em;
+            margin: 0 0 1.5em;
+            width: 100%;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.18);
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            position:relative;
+        }
+
+        /*overlay stuff*/
+                .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                /*background-color: #b6c1c6; */
+                background-color: rgba(255, 255, 255, 0.9)
+                }
+
+                .masonry .item:hover .overlay {
+                opacity: 1;
+                }
+                        
+
+                .text {
+                color: black;
+                white-space: normal;
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                }
+
+                /*end of overlay stuff*/
+
+        @media only screen and (min-width: 700px) {
+            .masonry {
+                -moz-column-count: 2;
+                -webkit-column-count: 2;
+                column-count: 2;
+            }
+        }
+
+        @media only screen and (min-width: 900px) {
+            .masonry {
+                -moz-column-count: 3;
+                -webkit-column-count: 3;
+                column-count: 3;
+            }
+        }
+
+        /*@media only screen and (min-width: 1100px) {
+            .masonry {
+                -moz-column-count: 4;
+                -webkit-column-count: 4;
+                column-count: 4;
+            }
+        }*/
+
+        @media only screen and (min-width: 1280px) {
+            .wrapper, .wrapper2 {
+                width: 1260px;
+            }
+        }
+	
+	
+	
+	/*end of masonry css*/
+	
+	/*skills gallery*/
+	/*code from
+	https://www.w3schools.com/howto/howto_css_equal_height.asp
+	*/
+	
+	.col-container {
+		display: table; /* Make the container element behave like a table */
+		width: 100%; /* Set full-width to expand the whole page */
+		border-spacing: 10px;
+	}
+
+	.col {
+		display: table-cell; /* Make elements inside the container behave like table cells */
+		width: 33.33333%;
+		padding: 8px 8px;
+	}
+	
+	@media only screen and (max-width: 700px) {
+		.col { 
+			display: block;
+			width: 95%;
+			margin: 10px auto;
+		}
+	}
+	
+	/*end of skills gallery*/
+	/*language bar css*/
+	
+	.bar1, .bar2, .bar3 {
+        position: relative;
+        background: #c9c9c9;
+        height: 1rem;
+        /*width: 20rem;*/
+        width: 100%;
+        text-align: right;
+        color: #414141;
+        }
+
+        .bar1::after, .bar2::after, .bar3::after {
+        position: absolute;
+        left: 0;
+        height: 100%;
+        background: pink;
+        
+        }
+
+        .bar1::after{
+            animation: bar1 3s ease forwards;
+            content: 'NATIVE';
+        }
+
+        .bar2::after{
+            animation: bar2 3s ease forwards;
+            content: 'INTERMEDIATE';
+        }
+
+        .bar3::after{
+            animation: bar3 3s ease forwards;
+            content: 'BEGINNER';
+        }
+
+        @keyframes bar1 { /**the animation names*/
+        from {
+            width: 0;
+        }
+        to {
+            width: 99%;
+        }
+        }
+
+        @keyframes bar2 {
+        from {
+            width: 0;
+        }
+        to {
+            width: 80%;
+        }
+        }
+
+        @keyframes bar3 {
+        from {
+            width: 0;
+        }
+        to {
+            width: 25%;
+        }
+        }
+	/*end of language bar css*/
+
+
+	</style>
+  </head>
+  <body>
+
+	
+  
+  
+    <div class="header">
+      <div class="container">
+	
+        <h1>Lynn Liu</h1>
+        <p>Welcome to my personal website</p>
+
+        <a class="btn" href="#gallery-section">Highlights Gallery</a>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="container">
+        <img src="https://media.licdn.com/dms/image/C5103AQHAtj4gNCepCQ/profile-displayphoto-shrink_200_200/0?e=1542240000&v=beta&t=mVN2rlW6aQTDtDAasnyn0c8UiXhp-ei0isxF4QydZUo" height="128" width="128">
+        <h2 id = "about-section">About Me</h2>
+        <p>Hi! I'm a third-year student at the University of Toronto!</p>
+        <p>I'm pursuing a double major in Computer Science and European Studies, and a minor in Russian.</p>
+        <p>I'm interested in using technology to foster teamwork and education.</p>	
+		<p>I am experienced in graphic and UX/UI design and am currently open to part-time and freelance opportunities.</p>	
+        </div>
+        </div>
+        <div class="main">
+        <div class="container">
+		
+		<div align = "center"><a class="btn" href="https://lynnlliu.github.io/Design%20Resume%2003-18.pdf" target="_blank">See Design Resume</a> <a class="btn" onclick="notAvailable()">See Coding Resume</a></div>
+      </div>
+    </div>
+	
+	<!---skills gallery --->
+	
+	<div class="wrapper">
+	<div class="wrapper">
+	<div class="col-container">
+	  <div class="col" style="background-color: #c9c9c9">
+		<h2>Programming Languages</h2>
+		<p>Python</p>
+		<p>Java</p>
+		<p>C</p>
+		<p>HTML</p>
+		<p>CSS</p>
+		<p>JavaScript</p>  
+	  </div>
+
+	  <div class="col" style="background-color: pink">
+		<h2>Software</h2>
+		<p>Adobe Illustrator</p>
+		<p>Adobe InDesign</p>
+		<p>Photoshop</p>
+		<p>GIMP</p>
+		<p>Paint Tool SAI</p>
+	  </div>
+
+	  <div class="col"style="background-color: #EAF3F7">
+		<h2>World Languages</h2>
+		  
+		<!----language chart-->
+		
+		English <div class="bar1" aria-roledescription="bar chart"></div>
+                French <div class="bar2" aria-roledescription="bar chart"></div>
+                Russian <div class="bar3" aria-roledescription="bar chart"></div>
+		
+		
+		<!--end of language chart-->
+	  </div>
+	</div>
+	
+	</div></div>
+	
+	<!--end of skills gallery--->
+	
+	<!--start of masonry gallery-->
+	<div class="gallery-body" id="gallery-section">
+	<div class="wrapper2">
+	<div class="wrapper2">
+	<p><span style="float: right; top: 0;"><a class="btn" href="http://lynnliu.portfoliobox.net/" target="_blank">See my full Art/Design Portfolio!</a> </span></p>
+	<h2>Highlights</h2>
+	<p>Click on image to view in new tab. 
+	</p>
+	
+	<div class="masonry">
+		
+		<div class="item">  <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/h800-577781vEqdPTXD.jpg" target="_blank">
+			<img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/h800-577781vEqdPTXD.jpg">
+			<div class="overlay">
+                                    <div class="text"><b><u>Illustration</u></b><br/>Lana Del Rey</div>
+                                </div>
+                </a>
+		</div>
+		
+		<div class="item"> <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/h800-577781ph4i8Qg7.png" target="_blank">
+                        <img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/h800-577781ph4i8Qg7.png" />
+                        <div class="overlay">
+                                    <div class="text"><b><u>Digital Illustration</u></b><br/>Kingsman</div>
+                                </div>
+                </a></div>
+		<div class="item"> <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/h800-5777816oq3Nu2l.png" target="_blank">
+			<img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/h800-5777816oq3Nu2l.png">
+			<div class="overlay">
+                                    <div class="text"><b><u>Layout</u></b><br/>Table of Contents (Food Themed)</div>
+                                </div>
+		</a></div>
+		<div class="item"> <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w1000-5777810tcBydY9.png" target="_blank">
+			<img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w1000-5777810tcBydY9.png">
+			<div class="overlay">
+                                    <div class="text"><b><u>Design</u></b><br/>"Skinning a Wireframe" (Assignment)</div>
+                                </div>
+		</a></div>
+		<div class="item"> <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/h800-577781kVxS2qCf.png" target="_blank">
+			<img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/h800-577781kVxS2qCf.png">
+			<div class="overlay">
+                                    <div class="text"><b><u>Poster</u></b><br/>RUCS Advertisement</div>
+                                </div>
+		</a></div>
+		<div class="item"> <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w1000-577781kgoYe4y7.png" target="_blank">
+			<img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/w1000-577781kgoYe4y7.png">
+			<div class="overlay">
+                                    <div class="text"><b><u>Logo</u></b><br/>RUCS</div>
+                                </div>
+		</a></div>
+		<div class="item"> <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/h800-577781UEJuN5kz.png" target="_blank">
+			<img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/h800-577781UEJuN5kz.png">
+			<div class="overlay">
+                                    <div class="text"><b><u>Game Interface</u></b><br/>Trilobites!</div>
+                                </div>
+		</a></div>
+		
+                </div>
+        </div>	</div> </div>
+	
+	<!--end of masonry gallery-->
+	<!--</div>-->
+
+    <div class="jumbotron">
+      <div class="container">
+        <h2 id = "contact-section">Let's Connect!</h2>
+		<p> <a onclick="notAvailable()">LinkedIn</a></p>
+        <a class="btn" href="mailto:liying.liu@mail.utoronto.ca?Subject=Hello" target="_top">Email me!</a>
+      </div>
+    </div>
+	
+	
+	<div class="nav" align="center">
+      
+        <ul><li>
+          <a href="http://lynnliu.portfoliobox.net/" target="_blank">Design</a>
+		  <a href="https://github.com/lynnlliu" target="_blank">Coding</a>
+		  <a href="#about-section">About</a>
+		  <a href="#contact-section">Contact</a>
+        </li></ul>
+      
+    </div>
+    
+    <script>
+    function notAvailable() {
+        alert("This section will be added soon!");
+    }
+    
+    var shiftWindow = function() { scrollBy(0, -80) };
+    if (location.hash) shiftWindow();
+    window.addEventListener("hashchange", shiftWindow);
+    </script>
+	
+	
+  </body>
+</html>
