@@ -206,12 +206,23 @@
 
 <div class = "content">
 <h1 id = "about-section">Hello,</h1>
-        <p>I'm a third-year student at the University of Toronto!</p>
-        <p>I'm pursuing a double major in Computer Science and European Studies, and a minor in Russian.</p>
+        <p>This site is currently under construction. You'll be redirected to Lynn's old website in <span id="countdowntimer">10</span> seconds</p>.
+        <!--<p>I'm pursuing a double major in Computer Science and European Studies, and a minor in Russian.</p>
         <p>I'm interested in using technology to foster teamwork and education.</p>	
 		<p>I am experienced in graphic and UX/UI design and am currently open to part-time and freelance opportunities.</p>
 		<p><a href="https://lynnlliu.github.io/Design%20Resume%2003-18.pdf" target="_blank"><div class="contentbutton">  Design Resume 
-</div> </a> </p>
+</div> </a> </p> -->
 
-</body>
+
+<script type="text/javascript">
+    var timeleft = 10;
+    var downloadTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdowntimer").textContent = timeleft;
+    if(timeleft <= 0)
+        clearInterval(downloadTimer);
+    },1000);
+</script>
+
+
 </html>
