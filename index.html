@@ -5,7 +5,24 @@
   <title>Lynn Liu</title>
   <meta http-equiv="Refresh" content="10; url=https://lynnlliu.github.io/old.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
   <style media='screen' type='text/css'>
+  
+	/*scrollbar*/
+	
+	::-webkit-scrollbar { 
+		width: 7px; 
+	}
+	::-webkit-scrollbar-track-piece { 
+		background-color: #F5F5F5;  /** scroll bar background color**/
+	} 
+	::-webkit-scrollbar-thumb:vertical {
+		width: 1px;
+		background-color: #008060; /** bar color **/
+		border-radius: 10px;
+	}
+ 
 	.sidebar {
 		position:fixed;
 		left:0;
@@ -14,6 +31,8 @@
 		top:0;
 		background: white;
 		box-shadow:0 2px 4px 0 rgba(0,0,0,0.66);
+		overflow: auto;
+
 	}
 	
 	.sidebar img{
@@ -102,10 +121,46 @@
 
 	margin-top:70px;
 	margin-bottom:70px;
+	padding-left: 10%;
+	padding-right: 10%;
+	}
+	
+	.content h1 {
+	
+	font-family: 'Nunito Sans';font-size: 60px;
+	color: #00b386;
+	}
+	
+	.content p {
+    font-family: 'Open Sans';font-size: 18px;
 	}
 
-
+	.contentbutton {
 	
+	    background: #00b386;
+		border: 2px solid #eee;
+		height: 28px;
+		width: 140px;
+
+		margin-bottom: 2px;
+		padding: 0 0 0 7px;
+		overflow: hidden;
+
+		/*text style*/
+		color: white;
+		text-decoration: none;
+		font: 18px/1.5 Helvetica,Arial,sans-serif;
+		 
+		/* Rounded Corners */
+		-webkit-border-radius: 15px; /* Chrome & Safari */
+		-moz-border-radius: 15px;    /* Firefox */
+		-khtml-border-radius: 15px;  /* Linux browsers */
+		border-radius: 15px;         /* CSS3 */
+	}
+	
+	.contentbutton:hover {
+		background-color: #008060;
+	}
 	
   </style>
 </head> 
@@ -150,9 +205,13 @@
 </div>
 
 <div class = "content">
-Lynn's new website is under contruction. You'll be redirected to the previous version in a few seconds. 
-	If you can't wait, click <a href = "https://lynnlliu.github.io/old.html">here</a>.
-</div> 
+<h1 id = "about-section">Hello,</h1>
+        <p>I'm a third-year student at the University of Toronto!</p>
+        <p>I'm pursuing a double major in Computer Science and European Studies, and a minor in Russian.</p>
+        <p>I'm interested in using technology to foster teamwork and education.</p>	
+		<p>I am experienced in graphic and UX/UI design and am currently open to part-time and freelance opportunities.</p>
+		<p><a href="https://lynnlliu.github.io/Design%20Resume%2003-18.pdf" target="_blank"><div class="contentbutton">  Design Resume 
+</div> </a> </p>
 
 </body>
 </html>
