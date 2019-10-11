@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>Lynn Liu</title>
+  <meta http-equiv="Refresh" content="10; url=https://lynnlliu.github.io/old.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+  <style media='screen' type='text/css'>
+  
+	/*scrollbar*/
+	
+	::-webkit-scrollbar { 
+		width: 7px; 
+	}
+	::-webkit-scrollbar-track-piece { 
+		background-color: #F5F5F5;  /** scroll bar background color**/
+	} 
+	::-webkit-scrollbar-thumb:vertical {
+		width: 1px;
+		background-color: #008060; /** bar color **/
+		border-radius: 10px;
+	}
+ 
+	.sidebar {
+		position:fixed;
+		left:0;
+		width:200px;
+		height:100%;
+		top:0;
+		background: white;
+		box-shadow:0 2px 4px 0 rgba(0,0,0,0.66);
+		overflow: auto;
+
+	}
+	
+	.sidebar img{
+		margin: 30px auto 30px auto;
+		display: block; /*NECESSARY FOR MARGIN AUTO TO WORK*/	
+	}
+	
+	.bottombar {
+		position:fixed;
+		bottom:0;
+		width:200px;
+		height:40px;
+		background: #00b386;
+	}
+
+  .button1 {
+    /* Basic CSS */
+    background: #00b386;
+    border: 2px solid #eee;
+    /*height: 28px;*/
+	max-height: 28px;
+    width: 115px;
+    margin: 0px auto 2px auto; /*top right bottom left*/
+    padding: 0 0 0 7px;
+    overflow: hidden;
+    display: block;
+
+    /*text style*/
+    color: white;
+    text-decoration: none;
+    font: 18px/1.5 Helvetica,Arial,sans-serif;
+     
+    /* Rounded Corners */
+    -webkit-border-radius: 15px; /* Chrome & Safari */
+    -moz-border-radius: 15px;    /* Firefox */
+    -khtml-border-radius: 15px;  /* Linux browsers */
+    border-radius: 15px;         /* CSS3 */
+      
+    /* Gradient */
+    /*background-image: -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.2));
+    background-image: -moz-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.2));
+    background-image: -o-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.2));
+    background-image: -ms-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.2));
+    background-image: linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.2));*/
+     
+    /* Transition */
+    /*-webkit-transition: All 0.5s ease;
+    -moz-transition: All 0.5s ease;
+    -o-transition: All 0.5s ease;
+    -ms-transition: All 0.5s ease;
+    transition: All 0.5s ease;*/
+	
+	
+	-webkit-transition: max-height 0.7s ease-out;
+    -moz-transition: max-height 0.7s ease-out;
+    -o-transition: max-height 0.7s ease-out;
+    -ms-transition: max-height 0.7s ease-out;
+	transition: max-height 0.7s ease-out;
+  }
+
+/*links in the button*/
+  .button1 a { 
+    display: block;
+    background-color: #008060;
+    color: white;
+    text-decoration: none;
+    font: 18px/1.5 Helvetica,Arial,sans-serif;
+    padding: 10px;
+    margin-left: -7px;
+  }
+ 
+  .button1:hover {
+	/*height: 200px;*/
+	height: auto;
+	max-height: 600px;
+	transition: max-height 0.8s ease-in;
+  }
+
+  .button1 a:hover {
+	background-color: #00664d;
+  }
+  
+  
+	.content {
+	margin-left:200px;
+
+	margin-top:70px;
+	margin-bottom:70px;
+	padding-left: 10%;
+	padding-right: 10%;
+	}
+	
+	.content h1 {
+	
+	font-family: 'Nunito Sans';font-size: 60px;
+	color: #00b386;
+	}
+	
+	.content p {
+    font-family: 'Open Sans';font-size: 18px;
+	}
+
+	.contentbutton {
+	
+	    background: #00b386;
+		border: 2px solid #eee;
+		height: 28px;
+		width: 140px;
+
+		margin-bottom: 2px;
+		padding: 0 0 0 7px;
+		overflow: hidden;
+
+		/*text style*/
+		color: white;
+		text-decoration: none;
+		font: 18px/1.5 Helvetica,Arial,sans-serif;
+		 
+		/* Rounded Corners */
+		-webkit-border-radius: 15px; /* Chrome & Safari */
+		-moz-border-radius: 15px;    /* Firefox */
+		-khtml-border-radius: 15px;  /* Linux browsers */
+		border-radius: 15px;         /* CSS3 */
+	}
+	
+	.contentbutton:hover {
+		background-color: #008060;
+	}
+	
+  </style>
+</head> 
+<body>
+	<div class='sidebar'>
+	
+	<img src="https://media.licdn.com/dms/image/C5103AQHAtj4gNCepCQ/profile-displayphoto-shrink_200_200/0?e=1542240000&v=beta&t=mVN2rlW6aQTDtDAasnyn0c8UiXhp-ei0isxF4QydZUo" height="128" width="128">
+
+<div class='button1'>Illustration
+<a href="https://images.spot.im/v1/production/tyfeu1xhm6wte7ruvftm" style = "margin-top: 5px;">Digital</a>
+<a href="https://1.bp.blogspot.com/-uMBKOQvp7KM/WJQgaqxtNTI/AAAAAAAAMOw/9WFKgBbxCJwnMMydncy82tfayoVF4PCmgCLcB/s1600/young_Stalin_1.jpg" style = "margin-bottom: 5px;">Traditional</a>
+</div>   
+
+<div class='button1'>Layouts
+<a href="https://images.spot.im/v1/production/tyfeu1xhm6wte7ruvftm" style = "margin-top: 5px;">Table of Contents</a>
+<a href="https://1.bp.blogspot.com/-uMBKOQvp7KM/WJQgaqxtNTI/AAAAAAAAMOw/9WFKgBbxCJwnMMydncy82tfayoVF4PCmgCLcB/s1600/young_Stalin_1.jpg">Posters</a>
+<a href="https://i.kym-cdn.com/photos/images/original/001/329/793/447.jpg" style = "margin-bottom: 5px;">Game interface</a></div>  
+
+<div class='button1'>Conceptual
+<a href="https://images.spot.im/v1/production/tyfeu1xhm6wte7ruvftm" style = "margin-top: 5px; margin-bottom: 5px;">Skinning a wireframe</a>
+</div> 
+
+<div class='button1'>Branding
+<a href="https://images.spot.im/v1/production/tyfeu1xhm6wte7ruvftm" style = "margin-top: 5px;">NAMUN</a>
+<a href="https://1.bp.blogspot.com/-uMBKOQvp7KM/WJQgaqxtNTI/AAAAAAAAMOw/9WFKgBbxCJwnMMydncy82tfayoVF4PCmgCLcB/s1600/young_Stalin_1.jpg" style = "margin-bottom: 5px;">RUCS</a>
+</div>  
+
+<div class='button1'>Coding
+<a href="https://github.com/lynnlliu" style = "margin-top: 5px;">Github</a>
+<a href="https://lynnlliu.github.io/old.html" style = "margin-bottom: 5px;">Old site</a>
+</div>  
+
+<div class='button1'>Contact
+<a href="https://images.spot.im/v1/production/tyfeu1xhm6wte7ruvftm" style = "margin-top: 5px;">Wow</a>
+<a href="https://1.bp.blogspot.com/-uMBKOQvp7KM/WJQgaqxtNTI/AAAAAAAAMOw/9WFKgBbxCJwnMMydncy82tfayoVF4PCmgCLcB/s1600/young_Stalin_1.jpg">I'm</a>
+<a href="https://i.kym-cdn.com/photos/images/original/001/329/793/447.jpg" style = "margin-bottom: 5px;">c0d3r??</a></div>  
+
+<div class="bottombar"> 
+</div>
+
+
+</div>
+
+<div class = "content">
+<h1 id = "about-section">Hello,</h1>
+        <p>This site is currently under construction. You'll be redirected to Lynn's old website in <span id="countdowntimer">10</span> seconds</p>.
+        <!--<p>I'm pursuing a double major in Computer Science and European Studies, and a minor in Russian.</p>
+        <p>I'm interested in using technology to foster teamwork and education.</p>	
+		<p>I am experienced in graphic and UX/UI design and am currently open to part-time and freelance opportunities.</p>
+		<p><a href="https://lynnlliu.github.io/Design%20Resume%2003-18.pdf" target="_blank"><div class="contentbutton">  Design Resume 
+</div> </a> </p> -->
+
+
+<script type="text/javascript">
+    var timeleft = 10;
+    var downloadTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdowntimer").textContent = timeleft;
+    if(timeleft <= 0)
+        clearInterval(downloadTimer);
+    },1000);
+</script>
+
+
+</html>
