@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+.item {
+            display: inline-block;
+            background: #fff;
+            padding: 1.5em;
+            margin: 0 0 1.5em;
+            width: 100%;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.18);
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            position:relative;
+        }
+
+        /*overlay stuff*/
+                .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                /*background-color: #b6c1c6; */
+                background-color: rgba(255, 255, 255, 0.9)
+                }
+
+                .masonry .item:hover .overlay {
+                opacity: 1;
+                }
+                        
+
+                .text {
+                color: black;
+                white-space: normal;
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                }
+
+                /*end of overlay stuff*/
+                
+</style>
+<body>
+
+<h1>Lynn's Aesthetics </h1>
+
+<p>Oxford Summer 2019</p>
+
+<div class="item">  <a href="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/h800-577781vEqdPTXD.jpg" target="_blank">
+			<img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/577781/page/h800-577781vEqdPTXD.jpg">
+			<div class="overlay">
+                                    <div class="text"><b><u>Illustration</u></b><br/>Lana Del Rey</div>
+                                </div>
+                </a>
+		</div>
+
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("item"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+
+</body>
+</html>
