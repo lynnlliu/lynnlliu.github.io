@@ -1,0 +1,318 @@
+	@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito+Sans&family=Radley&family=Work+Sans&display=swap");
+	
+	html, body {
+	  margin: 0;
+	  padding: 0;
+	}
+	
+	* {
+  box-sizing: border-box;
+}
+	
+	:root {
+		--header-color: white;
+		--link-color: blue;
+	}
+	
+	a:link, a:visited {
+	  color: black;
+	  text-decoration: none;
+	}
+	
+	a:hover {
+	  color: var(--link-color);
+	}
+	
+	
+	.menuitem {
+	  font-size: 14px;
+	  font-family: "Work Sans";
+	  margin-right: 36px;
+	  display: inline;
+	  text-transform: uppercase;
+	}
+	
+	.menuitem:last-of-type {
+	  margin-right: 0px;
+	}
+	
+	.menu {
+	  margin: auto 0px;
+	}
+
+
+	.name {
+	  font-family: 'Radley';
+	  font-weight: 100;
+	  font-size: 24px;
+	  margin-left: 36px;
+	}
+	
+
+	.desktop-header {
+	  background: var(--header-color);
+	  display: flex;
+	  flex-direction: row; 
+	  position: fixed;
+	  width: 100%;
+	  max-width: 1024px;
+	  padding: 20px 0px;
+	  justify-content: space-between; 
+	  margin: 0 auto;
+	  z-index: 999;
+	}
+	
+	.mobile-header {
+	  background: var(--header-color);
+	  /*position: fixed;*/
+	  width: 100%;
+	  padding: 10px 0px;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  z-index: 999;
+	  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+	}
+	
+	.mobile-name {
+		background: var(--header-color);
+	  width: 100%;
+	  padding: 10px 0px;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  z-index: 999;
+	}
+	
+	
+	
+	.outer-container { /*set max width=1024 and centered*/
+	  position: relative;
+	  width: 100%;
+	  max-width: 1024px;
+	  margin: 0 auto;
+	}
+	
+	.inner-container { /*sets content margin and padding below header*/
+	  margin: 0px 36px 36px 36px;
+	  padding-top: 90px;
+	  font-size: 16px;
+	  line-height: 200%;
+	  font-family: "Work Sans";
+	}
+	
+	@media (max-width: 700px) {
+	  /* mobile CSS: hide .desktop div */
+	  .desktop-header {
+		display: none
+	  }
+	  .inner-container {
+	  margin: 0px 16px 16px 16px;
+	  padding-top: 0px;
+	  }
+	  
+	  .name {
+	  margin-left: 0px;}
+	}
+	
+	@media (min-width: 700px) {
+	  /* desktop CSS: hide .mobile div */
+	  .mobile-header {
+		display: none
+	  }
+	  
+	  .mobile-name {
+		display: none
+	  }
+	  
+	  
+	}
+	
+	/*main pg intro*/
+	.intro-container {
+		display: flex;
+		margin-bottom: 70px;
+	}
+	
+	.intro-text {
+		margin: auto 0;
+		
+	}
+	
+	.intro-container img {
+		
+		height: 300px;
+		width: 300px;
+		float: right;
+		margin-left:1.5em;
+		
+	}
+	
+	@media (max-width: 700px) {
+	  /* mobile CSS: hide .desktop things */
+	  .intro-container {
+		margin-bottom: 0px;
+	  }
+	  .intro-container img {
+		display: none
+	  }
+	  
+	}
+	
+	.responsive-gallery {
+		margin-top: -16px;
+	}
+	
+	/*responsive gallery css*/
+	/*from https://www.w3schools.com/howto/howto_css_portfolio_gallery.asp*/
+	.row {
+  margin: 0px -16px;
+  font-size: 14px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.3333%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  line-height: normal;
+  text-align: center;
+  /*padding: 10px;*/
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 550px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/*end of responsive gallery css*/
+	
+	
+	
+/*start of masonry css*/
+
+        .gallery-body {
+            background: #EAF3F7;
+			line-height: normal;
+        }
+
+        .masonry img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        }
+
+        .masonry {
+            padding: 0;
+            -moz-column-gap: 1.5em;
+            -webkit-column-gap: 1.5em;
+            column-gap: 1.5em;
+            font-size: .85em;
+        }
+
+        .item {
+            display: inline-block;
+            /**background: #fff;
+            padding: 1.5em;**/
+			/**background: black;
+			padding: 4px;**/
+            margin: 0 0 1.5em;
+            width: 100%;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            /*box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.18);*/
+            /**border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;**/
+            position:relative;
+        }
+
+        /*overlay stuff*/
+                .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                /*background-color: #b6c1c6; */
+                background-color: rgba(255, 255, 255, 0.9)
+                }
+
+                .masonry .item:hover .overlay {
+                opacity: 1;
+                }
+                        
+
+                .text {
+                color: black;
+                white-space: normal;
+                font-size: 16px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                }
+
+                /*end of overlay stuff*/
+
+        @media only screen and (min-width: 700px) {
+            .masonry {
+                -moz-column-count: 2;
+                -webkit-column-count: 2;
+                column-count: 2;
+            }
+        }
+
+        @media only screen and (min-width: 900px) {
+            .masonry {
+                -moz-column-count: 3;
+                -webkit-column-count: 3;
+                column-count: 3;
+            }
+        }
+
+        /*@media only screen and (min-width: 1100px) {
+            .masonry {
+                -moz-column-count: 4;
+                -webkit-column-count: 4;
+                column-count: 4;
+            }
+        }*/
+	
+	/*end of masonry css*/
+	
+	
