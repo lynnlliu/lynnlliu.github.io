@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lynn Liu</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	
+  </head>
+  <body>
+	
+	
+	<div class="outer-container">
+	
+	<!-- Header Stuff-->
+	<div class="desktop-header">
+      <div class="name"><a href="index.html">lynn liu</a></div>
+	  <div class = "menu">
+        <div class="menuitem"><a href="index.html">main</a></div>
+		<div class="menuitem"><a href="extras.html">Extras</a></div>
+		<div class="menuitem" style="margin-right: 36px"><u><a href="about.html">About</a></u></div>
+      </div>
+    </div>
+	
+	<div class="mobile-name">
+      <div class="name"><a href="index.html">lynn liu</a></div>
+	  
+    </div>
+	
+	<div class="mobile-header">
+      <!--<div class="name">lynn liu</div>-->
+	  <div class = "menu">
+        <div class="menuitem"><a href="index.html">main</a></div>
+		<div class="menuitem"><a href="extras.html">Extras</a></div>
+		<div class="menuitem"><u><a href="about.html">About</a></u></div>
+      </div>
+    </div>
+	
+	<!-- End of Header Stuff-->
+	
+	<div class="inner-container"><p>I'm a digital designer, but I'm also a... </p>
+
+<!--<p>bibliophile/cinephile/language learner/chess novice/former otaku.</p>-->
+<span style="text-transform: uppercase; font-weight: 600; font-size: 24px">
+<div id="content-1" style="color: red;">Bibliophile</div>
+<div id="content-2" style="color: blue;">Cinephile</div>
+<div id="content-3" style="color: green;">Language learner</div>
+<div id="content-4" style="color: purple;">Chess novice</div>
+<div id="content-5" style="color: gray;">Former otaku</div>
+<!--<div id="content-6">Loop</div>
+<div id="content-7">Neep</div>-->
+</span>
+
+
+
+<p>What do they have in common? Well, they all have massive online communities!</p>
+
+<p>From a young age, I've appreciated how good digital design and user experience can enrich our lives and bring millions of people together. I'm indebted to the tireless contributers who shared their passions online, either teaching me a new skill or simply brightening my day. Thus, I want to use the talents and skills I've honed throughout the years to bring meaningful experiences through digital mediums. </p>
+
+<p>I'm especially passionate about projects in the education and wellbeing sectors that help make knowledge and resources more accessible. So far, I've brought my expertise to initiatives supporting financial literacy and mental health - I'm excited to see what the future holds! </p>
+
+<p>If you have an opportunity that aligns with my skills and values, please get in touch!</p>
+
+<p>Email: <a href="mailto:liyingliu2230@gmail?Subject=Hello" target="_top" style="color: var(--link-color); text-decoration: underline;">liyingliu2230@gmail.com</a>
+<br>LinkedIn: <a href="https://www.linkedin.com/in/lynn-liu-051465113/" target="blank" style="color: var(--link-color); text-decoration: underline;">linkedin.com/in/lynn-liu-051465113</a></p>
+
+<p><b>About my portfolio</b></p>
+
+<p>I built this website entirely from scratch in January 2022. I thought it would be a fun way to revisit my roots as a computer science student while giving my portfolio a much-needed update. If you want to view the code, follow this <a href="https://github.com/lynnlliu/" style="color: var(--link-color); text-decoration: underline;" target="blank">link</a>. By the way, the website is responsive, so feel free to check it out on your phone or tablet.</p>
+
+
+    </div></div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script>
+    var divs = $('div[id^="content-"]').hide(),
+    i = 0;
+
+(function cycle() { 
+
+    divs.eq(i).fadeIn(400)
+              .delay(1000)
+              .fadeOut(400, cycle);
+
+    i = ++i % divs.length;
+
+})();
+    </script>
+	
+	
+  </body>
+</html>
