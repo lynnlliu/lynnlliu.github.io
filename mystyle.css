@@ -194,10 +194,20 @@
 /* Content */
 .content {
   background-color: white;
-  line-height: normal;
+  /*line-height: normal;*/
   text-align: center;
   /*padding: 10px;*/
 }
+
+.content img{
+	vertical-align: bottom;
+}
+
+.caption {
+		background: #f9f9f9;
+		/*padding-top: 8px;
+		padding-bottom: 16px;*/
+	}
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
