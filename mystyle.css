@@ -381,8 +381,35 @@ justify-content: space-between; /*can delete justify-content if the text is long
 	  margin: 0;
 	  
 }
+		
+}
 	
 	/*end of content list*/
+
+/*start of trio*/
+	
+	.trio-container {
+		display: flex;
+		flex-direction: row;
+	}
+	
+	.trio-single{
+		width: 33%;
+		height: auto;
+	}
+	
+		@media screen and (max-width: 600px) { /*stack text and images*/
+  .trio-container {
+    flex-direction: column;
+	
+  }
+  
+.trio-single{
+width: 100%}
+
+	}
+	
+	/*end of trio*/
 	
 	
 	
