@@ -144,7 +144,7 @@
 	.intro-container img {
 		
 		height: 300px;
-		width: 300px;
+		width: auto;
 		float: right;
 		margin-left:1.5em;
 		
@@ -388,33 +388,37 @@ justify-content: space-between; /*can delete justify-content if the text is long
 
 /*start of trio*/
 	
-	.trio-container {
+	.duo-trio-container {
 		display: flex;
 		flex-direction: row;
+		padding: 8px 16px;
+		background: aliceblue;
+		border-radius: 24px;
+		justify-content: space-between;
 	}
 	
 	.trio-single{
-		width: 33%;
+		width: 33.3333%;
 		height: auto;
+		padding: 8px;
 	}
 	
+	.duo-single {
+		width: 50%;
+	height: auto;
+	font-size: 14px;
+	line-height: 160%;
+	padding: 8px;}
+	
 		@media screen and (max-width: 600px) { /*stack text and images*/
-  .trio-container {
+  .duo-trio-container {
     flex-direction: column;
 	
   }
   
-.trio-single{
+.trio-single, .duo-single{
 width: 100%}
 
 	}
 	
 	/*end of trio*/
-	
-	
-	
-	
-	
-	
-	
-	
