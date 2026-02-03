@@ -425,6 +425,11 @@ justify-content: space-between; /*can delete justify-content if the text is long
     flex-direction: column;
 	
   }
+
+.duo-trio-container-featured {
+    flex-direction: column;
+	
+  }
   
 .trio-single, .duo-single{
 width: 100%}
@@ -432,5 +437,6 @@ width: 100%}
 	}
 	
 	/*end of trio*/
+
 
 
