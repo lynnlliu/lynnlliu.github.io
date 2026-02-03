@@ -423,12 +423,6 @@ justify-content: space-between; /*can delete justify-content if the text is long
 	font-size: 14px;
 	line-height: 160%;
 	padding: 8px;}
-
-	.duo-single-featured {
-		width: 50%;
-	height: auto;
-	line-height: 0%;
-	padding: 8px;}
 	
 		@media screen and (max-width: 600px) { /*stack text and images*/
   .duo-trio-container {
@@ -447,6 +441,7 @@ width: 100%}
 	}
 	
 	/*end of trio*/
+
 
 
 
