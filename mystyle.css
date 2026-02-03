@@ -424,7 +424,7 @@ justify-content: space-between; /*can delete justify-content if the text is long
 	line-height: 160%;
 	padding: 8px;}
 
-	.duo-single-featured-img {
+	.duo-single-featured {
 		width: 50%;
 	height: auto;
 	line-height: 0%;
@@ -447,6 +447,7 @@ width: 100%}
 	}
 	
 	/*end of trio*/
+
 
 
 
