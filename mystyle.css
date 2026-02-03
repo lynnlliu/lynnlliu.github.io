@@ -400,11 +400,15 @@ justify-content: space-between; /*can delete justify-content if the text is long
 	.duo-trio-container-featured {
 		display: flex;
 		flex-direction: row;
-		padding: 8px 16px;
+		padding: 8px;
 		background: #f9f9f9;
 		border-radius: 12px;
 		justify-content: space-between;
 		margin-bottom: 24px;
+	}
+
+	.duo-trio-container-featured img{
+		border-radius: 8px;
 	}
 	
 	.trio-single{
@@ -437,6 +441,7 @@ width: 100%}
 	}
 	
 	/*end of trio*/
+
 
 
 
