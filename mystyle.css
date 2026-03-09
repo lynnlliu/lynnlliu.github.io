@@ -174,7 +174,11 @@
 
 /* Add padding BETWEEN each column (if you want) */
 .row,
-.row > .column, 
+.row > .column {
+  padding: 8px;
+}
+
+.row,
 .row > .column-thirds {
   padding: 8px;
 }
@@ -455,6 +459,7 @@ width: 100%}
 	}
 	
 	/*end of trio*/
+
 
 
 
