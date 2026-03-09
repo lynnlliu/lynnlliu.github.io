@@ -192,6 +192,7 @@
 .column-thirds {
   float: left;
   width: 33.3333%;
+text-align: center;
 }
 
 /* Clear floats after rows */
@@ -459,6 +460,7 @@ width: 100%}
 	}
 	
 	/*end of trio*/
+
 
 
 
