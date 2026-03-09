@@ -174,7 +174,8 @@
 
 /* Add padding BETWEEN each column (if you want) */
 .row,
-.row > .column {
+.row > .column, 
+.row > .column-thirds, {
   padding: 8px;
 }
 
@@ -211,7 +212,7 @@
 
 .caption {
 		background: #ffffff;
-		padding-top: 16 px;
+		padding-top: 16px;
 		padding-bottom: 16px;
 		line-height: 180%; 
 	}
@@ -454,6 +455,7 @@ width: 100%}
 	}
 	
 	/*end of trio*/
+
 
 
 
