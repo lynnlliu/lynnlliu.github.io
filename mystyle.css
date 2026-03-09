@@ -180,6 +180,11 @@
 
 /* Create four equal columns that floats next to each other */
 .column {
+  float: inline-end;
+  width: 50%;
+}
+
+.column-thirds {
   float: left;
   width: 33.3333%;
 }
@@ -195,18 +200,20 @@
 .content {
   background-color: white;
   /*line-height: normal;*/
-  text-align: center;
+  /*text-align: center;*/
   /*padding: 10px;*/
 }
 
 .content img{
 	vertical-align: bottom;
+	border-radius: 10px;
 }
 
 .caption {
-		background: #f9f9f9;
-		/*padding-top: 8px;
-		padding-bottom: 16px;*/
+		background: #ffffff;
+		padding-top: 16 px;
+		padding-bottom: 16px;
+		line-height: 180%; 
 	}
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -214,11 +221,17 @@
   .column {
     width: 50%;
   }
+.column-thirds {
+    width: 50%;
+  }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 550px) {
   .column {
+    width: 100%;
+  }
+.column-thirds {
     width: 100%;
   }
 }
@@ -441,6 +454,7 @@ width: 100%}
 	}
 	
 	/*end of trio*/
+
 
 
 
