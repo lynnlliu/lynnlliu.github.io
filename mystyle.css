@@ -175,7 +175,7 @@
 /* Add padding BETWEEN each column (if you want) */
 .row,
 .row > .column, 
-.row > .column-thirds, {
+.row > .column-thirds {
   padding: 8px;
 }
 
@@ -455,6 +455,7 @@ width: 100%}
 	}
 	
 	/*end of trio*/
+
 
 
 
