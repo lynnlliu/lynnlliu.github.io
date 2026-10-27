@@ -134,6 +134,7 @@
 	.intro-container {
 		display: flex;
 		margin-bottom: 70px;
+		align-items: center;
 	}
 	
 	.intro-text {
